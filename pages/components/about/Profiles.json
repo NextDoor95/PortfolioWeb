@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image": "/public/abanderado.jpeg",
+        "title": "standard bearer"
+    },
+    {
+        "id": 2,
+        "image": "/public/chill.jpeg",
+        "title": "standard bearer"
+    },
+    {
+        "id": 3,
+        "image": "/public/soldier.jpeg",
+        "title": "standard bearer"
+    }
+]
