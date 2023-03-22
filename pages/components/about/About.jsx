@@ -15,9 +15,10 @@ function About() {
                     className="image"
                     src={Profile}
                     alt="Profile"
-                    width={150}
-                    height={150}
+                    width={200}
+                    height={200}
                 />
+                
                 <div className="social">
                     <Link className="button" href='https://www.linkedin.com/in/nextdoor-frontend/' target='_blank' rel='noreferrer'>
                         <i className="fa-brands fa-linkedin-in"></i>

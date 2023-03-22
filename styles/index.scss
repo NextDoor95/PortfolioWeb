@@ -17,12 +17,34 @@ html {
 }
 
 body {
-    background: rgb(66,16,48);
-	background: linear-gradient(90deg, rgba(66,16,48,0.95) 40%, rgba(0,0,0,0.95) 100%);
+	background: rgba(9, 43, 57);
 }
 
 .loader {
     display: flex;
     text-align: center;
     align-items: center;
+}
+
+.button {
+	background-color:black;
+	padding: 0 10px;
+	color: #fff;
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+	border-radius: 250px;
+	cursor: pointer;
+	text-decoration: none;
+	border: 2px solid rgba( 9, 43, 57, 1 );
+	transition: all 0.3s ease;
+	&:hover {
+		background-color: rgba( 9, 43, 57, 0.3 );
+		border: 2px solid rgba( 55, 175, 101, 0.8 );
+	}
 }

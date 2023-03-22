@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles"
 function Particle() {
     const optionsVar = {
         fullScreen: {
-            zIndex: -1,
+            zIndex: -10,
         },
         fpsLimit: 120,
         interactivity: {
@@ -32,13 +32,13 @@ function Particle() {
         },
         particles: {
             color: {
-                value: "#ffffff",
+                value: "#f2cc00",
             },
             links: {
-                color: "#ffffff",
+                color: "#f2cc00",
                 distance: 150,
                 enable: true,
-                opacity: 0.5,
+                opacity: 0.75,
                 width: 1,
             },
             collisions: {
@@ -62,7 +62,7 @@ function Particle() {
                 value: 80,
             },
             opacity: {
-                value: 0.5,
+                value: 0,
             },
             shape: {
                 type: "circle",
