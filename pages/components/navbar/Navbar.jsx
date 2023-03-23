@@ -19,13 +19,13 @@ function Navbar() {
         </div>
         
         <div className="buttons_mid">
-                <Link className="button" rel='noreferrer' smooth={true} offset={-50} duration={500} href="#about" >
+                <Link className="button" rel='noreferrer' smooth="true" offset={-50} duration={500} href="about" >
                     <i className="fa-solid fa-house"></i> <div className="bug"> Sobre mí</div>
                 </Link>
-                <Link className="button" rel='noreferrer' smooth={true} offset={-50} duration={500} href="#experience">
+                <Link className="button" rel='noreferrer' smooth="true" offset={-50} duration={500} href="experience">
                     <i className="fa-solid fa-brain"></i> <div className="bug"> Experiencia</div>
                 </Link>
-                <Link className="button" rel='noreferrer' smooth={true} offset={-50} duration={500} href="#contact">
+                <Link className="button" rel='noreferrer' smooth="true" offset={-50} duration={500} href="contact">
                     <i className="fa-solid fa-address-book"></i> <div className="bug"> Certificados</div>
                 </Link>
         </div>

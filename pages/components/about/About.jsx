@@ -1,12 +1,15 @@
 import React from 'react'
-import Image from 'next/image'
-import Profile from '/public/NextDoor.png'
 
 import Spline from '@splinetool/react-spline'
 
 import Link from 'next/link'
 
-import Slideshow from 'pages/components/slideshow/slideshow.jsx'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/effect-cards'
+import { EffectCards, Autoplay, Pagination } from 'swiper'
+import 'swiper/css/bundle'
+
 
 function About() {
     return (
@@ -37,8 +40,37 @@ function About() {
             </div>
 
             <div className="description">
-                <div className="slideShow">
-                    <Slideshow />
+                <div className='swiper'>
+                    <>
+                        <Swiper
+                            effect='cards'
+                            grabCursor
+                            modules={[EffectCards, Autoplay, Pagination]}
+                            loop
+                            autoplay={{
+                                delay: 3000,
+                                disableOnInteraction: false
+                            }}
+                            pagination={{
+                                el: '.swiper-pagination',
+                                type: 'bullets',
+                                clickable: true
+                            }}
+                            className='swiper-slide'
+                        >
+                            <SwiperSlide />
+                            <SwiperSlide />
+                            <SwiperSlide />
+                            <SwiperSlide />
+                            <SwiperSlide />
+                            <SwiperSlide />
+                            <SwiperSlide />
+                            <SwiperSlide />
+                            <SwiperSlide />
+                        </Swiper>
+                        <div className='swiper-pagination' />
+                    </>
+                    
                 </div>
             </div>
             
