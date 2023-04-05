@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 import Link from 'next/link'
 
+import Nextgif from '/public/ProfilePic2.gif'
+
 import Next from '/public/logo2.jpg'
 
 function Navbar() {
@@ -10,11 +12,11 @@ function Navbar() {
     <div className="navbar">
         <div className="logo">
             <Image 
-                src={Next}
+                src={Nextgif}
                 alt="Logo"
-                id='coin'
-                width={80}
-                height={40}
+                id='logo'
+                width={70}
+                height={70}
             />
         </div>
         
@@ -34,7 +36,7 @@ function Navbar() {
             <Link className="greenbtn" href="#experience" rel='noreferrer'>
                 <i className="fa-brands fa-whatsapp"></i> <div className="bug">Iteremos!</div>
             </Link>
-            <div>
+            <div className="configbutton">
                 <i className="fa-sharp fa-solid fa-earth-americas"></i>
                 <i className="fa-solid fa-beer-mug-empty"></i>
                 <i className="fa-solid fa-sun"></i>

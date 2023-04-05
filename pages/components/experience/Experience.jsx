@@ -8,6 +8,10 @@ function Experience() {
                 Experiencia
             </h1>
         </div>
+
+        <div className="glassBox"> lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum
+            lorem ipsum
+        </div>
         
     </div>
     )

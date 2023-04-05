@@ -1,8 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 import Spline from '@splinetool/react-spline'
 
-import Link from 'next/link'
+import Javascript from 'public/JavaScript-logo.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -33,9 +35,18 @@ function About() {
                     </Link>
                 </div>
                 <div className="glassBox">
-                    Hola! Mi nombre es Néstor, soy desarrollador frontend con un enfoque en el diseño UX/UI y entusiasta web3, 
-                    lo que me llevó a estudiar backend en Solidity y Hardhat para mejorar mis habilidades 
-                    y poder construir Dapps, brindando soluciones modernas al codigo de los paradigmas actuales.
+                    Hola! Mi nombre es Néstor, vivo en Puerto Madryn, Chubut.
+                    Soy desarrollador frontend enfocado al diseño UX/UI y entusiasta web3. 
+                    Me considero creativo y 100% autodidacta, mi tech stack:
+                    <div>
+                        <Image 
+                            src={Javascript}
+                            alt="JavaScript Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                        />
+                    </div>
                 </div>
             </div>
 

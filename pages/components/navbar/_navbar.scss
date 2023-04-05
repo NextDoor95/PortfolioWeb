@@ -1,6 +1,7 @@
 
 .navbar {
-    height: 50px;
+    height: 76px;
+	width: 100vw;
 	padding: 0 0.5rem;
 	position: sticky;
 	top: 0;
@@ -10,15 +11,22 @@
 	align-items: center;
 	z-index: 20;
 	text-decoration: none;
-
-	background: rgba( 9, 43, 57, 0.5 );
+	border-radius: 10px;
+	background: #000;
 	box-shadow: 0 8px 32px 0 rgba( 9, 43, 57, 0.2 );
 	backdrop-filter: blur( 1px );
 	-webkit-backdrop-filter: blur( 1px );
-	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	border: 2px solid rgba( 9, 43, 57, 1 );
 
 	.logo {
-		width: 30%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+		transition: all 0.2s ease-out;
+		&:hover {
+			scale: 1.05;
+		}
 	}
 
 	.buttons_mid {
@@ -61,6 +69,9 @@
 			.bug {
 				padding-left: 8px;
 			}
+		}
+		.configbutton {
+			color: #fff;
 		}
 	}
 }
