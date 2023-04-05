@@ -15,7 +15,7 @@ html {
 	padding: 0;
 	margin: 0;
 	font-family: 'Poppins', sans-serif;
-	padding: 0px 4%;
+	padding: 0px 2%;
 }
 
 body {
@@ -26,8 +26,11 @@ body {
 	),url(https://i.postimg.cc/J4C6R2wr/Dise-o-sin-t-tulo-dsaadsasd.png);
 	background-size: cover;
 	background-attachment: fixed;
-  	background-repeat: no-repeat;
-  	background-position: center;
+}
+
+span {
+	color: rgba(139, 188, 238);
+	font-size: 19px;
 }
 
 .loader {
@@ -62,9 +65,23 @@ body {
 .glassBox {
 	color: #fff;
     padding: 1rem 1.5rem;
-    background: rgba( 0, 0, 0, 0.3 );
+    background: rgba( 0, 0, 0, 0.5 );
     box-shadow:  -6px 4px 8px 0 rgba(18, 122, 236, 0.8 );
 	border-radius: 10px;
+}
+
+.iconstack{
+	width: 100%;
+	height: 70px;
+	padding-top: 10px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+	.iconlogo{
+		border-radius: 10px;
+		align-items: space-between;
+	}
 }
 
 .title{

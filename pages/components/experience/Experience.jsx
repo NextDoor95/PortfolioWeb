@@ -1,4 +1,7 @@
 import React from 'react'
+import Image from 'next/image'
+
+import Soldier from 'public/soldier.jpeg'
 
 function Experience() {
     return (
@@ -9,9 +12,41 @@ function Experience() {
             </h1>
         </div>
 
-        <div className="glassBox"> lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum
-            lorem ipsum
+        <div>
+            <div className="projects">
+                <div className="individualproject">
+                    <Image 
+                        src={Soldier}
+                        alt="Soldier photo"
+                        id='logo'
+                        width={300}
+                        height={300}
+                        className="imgproject"
+                    />
+                    <div className="glassBox">
+                        lorem ipsum lorem ipsumlorem ipsumlorem
+                        ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsum
+                    </div>
+                </div>
+                <div className="individualproject">
+                    <Image 
+                        src={Soldier}
+                        alt="Soldier photo"
+                        id='logo'
+                        width={300}
+                        height={300}
+                        className="imgproject"
+                    />
+                    <div className="glassBox">
+                        lorem ipsum lorem ipsumlorem ipsumlorem
+                        ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum
+                        lorem ipsum
+                    </div>
+                </div>
+            </div>
         </div>
+        
         
     </div>
     )

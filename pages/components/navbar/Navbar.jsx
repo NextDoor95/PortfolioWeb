@@ -38,9 +38,6 @@ function Navbar() {
             </Link>
             <div className="configbutton">
                 <i className="fa-sharp fa-solid fa-earth-americas"></i>
-                <i className="fa-solid fa-beer-mug-empty"></i>
-                <i className="fa-solid fa-sun"></i>
-                <i className="fa-solid fa-moon"></i>
             </div>
             
         </div>

@@ -12,13 +12,17 @@
 	z-index: 20;
 	text-decoration: none;
 	border-radius: 10px;
-	background: #000;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0.5)
+	);
 	box-shadow: 0 8px 32px 0 rgba( 9, 43, 57, 0.2 );
 	backdrop-filter: blur( 1px );
 	-webkit-backdrop-filter: blur( 1px );
-	border: 2px solid rgba( 9, 43, 57, 1 );
 
 	.logo {
+		max-width: 250px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -30,8 +34,8 @@
 	}
 
 	.buttons_mid {
-		width: 40%;
-		max-width: 450px;
+		min-width: 450px;
+		max-width: 550px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -42,7 +46,7 @@
 		}
 	}
 	.buttons_corner {
-		width: 30%;
+		max-width: 250px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;

@@ -5,6 +5,12 @@ import Image from 'next/image'
 import Spline from '@splinetool/react-spline'
 
 import Javascript from 'public/JavaScript-logo.png'
+import Reacticon from 'public/react.png'
+import Next from 'public/nextjs.png'
+import Sass from 'public/sass.jpg'
+import Git from 'public/git.png'
+import Hardhat from 'public/hardhat.png'
+import Solidity from 'public/solidity.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -35,16 +41,65 @@ function About() {
                     </Link>
                 </div>
                 <div className="glassBox">
-                    Hola! Mi nombre es Néstor, vivo en Puerto Madryn, Chubut.
-                    Soy desarrollador frontend enfocado al diseño UX/UI y entusiasta web3. 
-                    Me considero creativo y 100% autodidacta, mi tech stack:
-                    <div>
+                    Hola! Mi nombre es <span>Néstor Huircapan</span>, vivo en <span>Puerto Madryn, Chubut</span>.
+                    Soy <span>desarrollador frontend</span> enfocado al diseño <span>UX/UI</span> y entusiasta<span> web3</span>, 
+                    me considero 100% <span>creativo y autodidacta</span>. <br/><span>mi tech stack</span>:
+                    <div className="iconstack">
                         <Image 
                             src={Javascript}
                             alt="JavaScript Logo"
                             id='logo'
                             width={50}
                             height={50}
+                            className="iconlogo"
+                        />
+                        <Image 
+                            src={Sass}
+                            alt="Sass Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                            className="iconlogo"
+                        />
+                        <Image 
+                            src={Solidity}
+                            alt="Solidity Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                            className="iconlogo"
+                        />
+                        <Image 
+                            src={Reacticon}
+                            alt="React Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                            className="iconlogo"
+                        />
+                        <Image 
+                            src={Next}
+                            alt="Next.js Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                            className="iconlogo"
+                        />
+                        <Image 
+                            src={Hardhat}
+                            alt="Hardhat Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                            className="iconlogo"
+                        />
+                        <Image 
+                            src={Git}
+                            alt="Git Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                            className="iconlogo"
                         />
                     </div>
                 </div>
