@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Spline from '@splinetool/react-spline'
 
 import Javascript from 'public/JavaScript-logo.png'
+import Typescript from 'public/Typescript.png'
 import Reacticon from 'public/react.png'
 import Next from 'public/nextjs.png'
 import Sass from 'public/sass.jpg'
@@ -48,6 +49,14 @@ function About() {
                         <Image 
                             src={Javascript}
                             alt="JavaScript Logo"
+                            id='logo'
+                            width={50}
+                            height={50}
+                            className="iconlogo"
+                        />
+                        <Image 
+                            src={Typescript}
+                            alt="TypeScript Logo"
                             id='logo'
                             width={50}
                             height={50}

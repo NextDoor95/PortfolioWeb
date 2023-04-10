@@ -19,18 +19,14 @@ html {
 }
 
 body {
-	background-image: linear-gradient(
-		90deg,
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 0.2)
-	),url(https://i.postimg.cc/J4C6R2wr/Dise-o-sin-t-tulo-dsaadsasd.png);
+	background-image: url(https://i.postimg.cc/J4C6R2wr/Dise-o-sin-t-tulo-dsaadsasd.png);
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 span {
 	color: rgba(139, 188, 238);
-	font-size: 19px;
+	font-size: 18px;
 }
 
 .loader {
@@ -65,8 +61,12 @@ span {
 .glassBox {
 	color: #fff;
     padding: 1rem 1.5rem;
-    background: rgba( 0, 0, 0, 0.5 );
-    box-shadow:  -6px 4px 8px 0 rgba(18, 122, 236, 0.8 );
+    background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0.6)
+	);
+    box-shadow:  -6px 6px 4px 0 rgba(18, 122, 236, 0.5 );
 	border-radius: 10px;
 }
 
@@ -88,5 +88,16 @@ span {
 	color: #fff;
 	align-items: center;
 	text-align: center;
+	margin-bottom: 5rem;
 	justify-content: space-between;
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 50%;
+    top: 50%;
 }
