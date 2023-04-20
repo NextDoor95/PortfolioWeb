@@ -4,6 +4,8 @@ import Image from 'next/image'
 
 import Spline from '@splinetool/react-spline'
 
+import Logos from '../logos/Logos.jsx'
+
 import Javascript from 'public/JavaScript-logo.png'
 import Typescript from 'public/Typescript.png'
 import Reacticon from 'public/react.png'
@@ -45,6 +47,9 @@ function About() {
                     Hola! Mi nombre es <span>Néstor Huircapan</span>, vivo en <span>Puerto Madryn, Chubut</span>.
                     Soy <span>desarrollador frontend</span> enfocado al diseño <span>UX/UI</span> y entusiasta<span> web3</span>, 
                     me considero 100% <span>creativo y autodidacta</span>. <br/><span>mi tech stack</span>:
+                    <div className="iconstack">
+                        <Logos/>
+                    </div>
                     <div className="iconstack">
                         <Image 
                             src={Javascript}
@@ -115,37 +120,15 @@ function About() {
             </div>
 
             <div className="description">
-                <div className='swiper'>
-                    <>
-                        <Swiper
-                            effect='cards'
-                            grabCursor
-                            modules={[EffectCards, Autoplay, Pagination]}
-                            loop
-                            autoplay={{
-                                delay: 3000,
-                                disableOnInteraction: false
-                            }}
-                            pagination={{
-                                el: '.swiper-pagination',
-                                type: 'bullets',
-                                clickable: true
-                            }}
-                            className='swiper-slide'
-                        >
-                            <SwiperSlide />
-                            <SwiperSlide />
-                            <SwiperSlide />
-                            <SwiperSlide />
-                            <SwiperSlide />
-                            <SwiperSlide />
-                            <SwiperSlide />
-                            <SwiperSlide />
-                            <SwiperSlide />
-                        </Swiper>
-                        <div className='swiper-pagination' />
-                    </>
-                    
+                <div>
+                    <Image 
+                        src={Git}
+                        alt="Git Logo"
+                        id='logo'
+                        width={400}
+                        height={400}
+                        className="iconlogo"
+                    />
                 </div>
             </div>
             

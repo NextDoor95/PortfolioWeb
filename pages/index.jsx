@@ -5,6 +5,7 @@ import Particle from './components/Particle.jsx'
 import Navbar from './components/navbar/Navbar'
 import About from './components/about/About.jsx'
 import Experience from './components/experience/Experience.jsx'
+import Footer from './components/footer/Footer.jsx'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,8 @@ export default function Home() {
         <About />
 
         <Experience />
+
+        <Footer />
 
       </main>
     </>

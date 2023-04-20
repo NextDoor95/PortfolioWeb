@@ -66,6 +66,7 @@
 			text-decoration: none;
 			border: 2px solid rgba( 245, 245, 245, 0.8 );
 			margin: 20px;
+			transition: all 0.1s ease-out;
 			&:hover {
 				background-color: rgba( 55, 175, 101, 0.3 );
 				border: 2px solid rgba( 55, 175, 101, 0.8 );

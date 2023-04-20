@@ -49,7 +49,7 @@ function Experience() {
                         </Link>
                         <Link
                             className="button"
-                            href='https://discord.gg/pGatZvdcdz'
+                            href='https://discord.gg/resiliente'
                             target='_blank'
                             rel='noreferrer'
                             >
