@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState } from 'react'
 
 import Spline from '@splinetool/react-spline'
 
@@ -22,7 +23,52 @@ import { EffectCards, Autoplay, Pagination } from 'swiper'
 import 'swiper/css/bundle'
 
 
-function About() {
+function About(props) {
+
+
+    const { logos, setLogos } = useState([
+        {
+            id: 1,
+            src: 'https://i.postimg.cc/FRJQBsxp/Typescript.png',
+            alt: "JavaScript Logo"
+        },
+        {
+            id: 2,
+            src: "https://i.postimg.cc/FRJQBsxp/Typescript.png",
+            alt: "TypeScript Logo"
+        },
+        {
+            id: 3,
+            src: 'https://i.postimg.cc/FRJQBsxp/Typescript.png',
+            alt: "Sass Logo"
+        },
+        {
+            id: 4,
+            src: 'https://i.postimg.cc/FRJQBsxp/Typescript.png',
+            alt: "Solidity Logo"
+        },
+        {
+            id: 5,
+            src: 'https://i.postimg.cc/FRJQBsxp/Typescript.png',
+            alt: "React Logo"
+        },
+        {
+            id: 6,
+            src: 'https://i.postimg.cc/FRJQBsxp/Typescript.png',
+            alt: "NextJs Logo"
+        },
+        {
+            id: 7,
+            src: 'https://i.postimg.cc/FRJQBsxp/Typescript.png',
+            alt: "Hardhat Logo"
+        },
+        {
+            id: 8,
+            src: 'https://i.postimg.cc/FRJQBsxp/Typescript.png',
+            alt: "Git Logo"
+        }
+    ])
+    
     return (
         <div className="about" id="about">
             <div className="profile">
@@ -47,9 +93,7 @@ function About() {
                     Hola! Mi nombre es <span>Néstor Huircapan</span>, vivo en <span>Puerto Madryn, Chubut</span>.
                     Soy <span>desarrollador frontend</span> enfocado al diseño <span>UX/UI</span> y entusiasta<span> web3</span>, 
                     me considero 100% <span>creativo y autodidacta</span>. <br/><span>mi tech stack</span>:
-                    <div className="iconstack">
-                        <Logos/>
-                    </div>
+                    
                     <div className="iconstack">
                         <Image 
                             src={Javascript}

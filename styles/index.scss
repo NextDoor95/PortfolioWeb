@@ -23,6 +23,13 @@ body {
 	background: radial-gradient(circle, rgba(2,37,56,1) 0%, rgba(0,0,0,1) 100%);
 }
 
+section {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	scroll-snap-align: center;
+}
+
 span {
 	color: rgba(139, 188, 238);
 	font-size: 18px;
@@ -82,6 +89,13 @@ span {
 		align-items: space-between;
 	}
 }
+
+.stackhidden {
+	opacity: 0;
+	transition: all 1s;
+}
+
+
 
 .title{
 	color: #fff;

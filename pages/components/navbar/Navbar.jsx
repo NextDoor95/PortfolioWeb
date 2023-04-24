@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
+import { animateScroll as scroll } from 'react-scroll';
 import Link from 'next/link'
 
 import Nextgif from '/public/ProfilePic2.gif'
@@ -8,27 +8,33 @@ import Nextgif from '/public/ProfilePic2.gif'
 import Next from '/public/logo2.jpg'
 
 function Navbar() {
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    }
+    
     return (
     <div className="navbar">
-        <div className="logo">
-            <Image 
+        <Link className="logo" rel='noreferrer' offset={-150} duration={500} href="/">
+            <Image
                 src={Nextgif}
                 alt="Logo"
                 id='logo'
                 width={70}
                 height={70}
+                href="/#about"
             />
-        </div>
+        </Link>
         
         <div className="buttons_mid">
-                <Link className="button" rel='noreferrer' smooth="true" offset={-50} duration={500} href="about" >
-                    <i className="fa-solid fa-house"></i> <div className="bug"> Sobre mí</div>
+                <Link className="button" href="/" spy={true} smooth={true} offset={50} duration={500} >
+                    <i className="fa-solid fa-house"></i><a className="bug" smooth >Sobre mí</a>
                 </Link>
-                <Link className="button" rel='noreferrer' smooth="true" offset={-50} duration={500} href="experience">
-                    <i className="fa-solid fa-brain"></i> <div className="bug"> Experiencia</div>
+                <Link className="button" rel='noreferrer' href="/#experience" spy={true} smooth={true} offset={50} duration={500}>
+                    <i className="fa-solid fa-brain"></i> <a className="bug">Experiencia</a>
                 </Link>
-                <Link className="button" rel='noreferrer' smooth="true" offset={-50} duration={500} href="contact">
-                    <i className="fa-solid fa-address-book"></i> <div className="bug"> Certificados</div>
+                <Link className="button" rel='noreferrer' smooth offset={-50} duration={500} href="/#contact">
+                    <i className="fa-solid fa-address-book"></i> <a className="bug">Contacto</a>
                 </Link>
         </div>
 

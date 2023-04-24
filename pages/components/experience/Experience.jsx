@@ -219,62 +219,8 @@ function Experience() {
                         </div>
                     </div>
                 </div>
-                <div className="individualproject">
-                    <div className="imgproject">
-                        <Image 
-                            src={Nof}
-                            alt="JavaScript Logo"
-                            id='logo'
-                            height={200}
-                            width={400}
-                            className="img"
-                        />
-                    </div>
-                    <div className="glassBox">
-                        lorem ipsum lorem ipsumlorem ipsumlorem
-                        ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum
-                        lorem ipsum
-                    <div className="social">
-                        <Link className="button" href='https://www.linkedin.com/in/nextdoor-frontend/' target='_blank' rel='noreferrer'>
-                            <i className="fa-brands fa-linkedin-in"></i>
-                        </Link>
-                        <Link className="button" href='https://twitter.com/NextDoor95' target='_blank' rel='noreferrer'>
-                            <i className="fa-brands fa-twitter"></i>
-                        </Link>
-                    </div>
-                    </div>
-                    
-                </div>
-                <div className="individualproject">
-                    <div className="imgproject">
-                        <Image 
-                            src={Nof}
-                            alt="JavaScript Logo"
-                            id='logo'
-                            height={200}
-                            width={400}
-                            className="img"
-                        />
-                    </div>
-                    
-                    <div className="glassBox">
-                        lorem ipsum lorem ipsumlorem ipsumlorem
-                        ipsumlorem ipsumlorem ipsum lorem ipsumlorem ipsumlorem ipsum
-                        lorem ipsum
-                        <div className="social">
-                            <Link className="button" href='https://www.linkedin.com/in/nextdoor-frontend/' target='_blank' rel='noreferrer'>
-                                <i className="fa-brands fa-linkedin-in"></i>
-                            </Link>
-                            <Link className="button" href='https://twitter.com/NextDoor95' target='_blank' rel='noreferrer'>
-                                <i className="fa-brands fa-twitter"></i>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        
-        
     </div>
     )
 }
