@@ -5,29 +5,27 @@
 @import 'pages/components/experience/_experience.scss';
 
 * {
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
 }
+
+
 
 html {
 	height: 100%;
-	padding: 0;
-	margin: 0;
-	font-family: 'Poppins', sans-serif;
 	padding: 0px 2%;
 }
 
 body {
-	background: rgb(2,37,56);
-	background: radial-gradient(circle, rgba(2,37,56,1) 0%, rgba(0,0,0,1) 100%);
-}
-
-section {
-	height: 100vh;
-	width: 100%;
-	position: relative;
-	scroll-snap-align: center;
+	background: rgb(22,24,28);
+	background: radial-gradient(circle, rgba(22,24,28,1) 0%, rgba(0,0,0,1) 45%);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 span {
@@ -43,7 +41,7 @@ span {
 
 .button {
 	background-color:black;
-	padding: 0 10px;
+	padding: 0 12px;
 	color: #fff;
 	font-family: 'Poppins';
 	font-weight: 500;
@@ -52,28 +50,30 @@ span {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	justify-content: space-between;
-	border-radius: 250px;
+	justify-content: center;
+	border-radius: 50px;
 	cursor: pointer;
 	text-decoration: none;
-	border: 2px solid rgba( 9, 43, 57, 1 );
+	box-shadow:
+            inset 6px 6px 16px rgba( 0, 0, 0, 1 ),
+            inset -6px -6px 16px rgba( 9, 43, 57, 0.4 );
 	transition: all 0.2s ease-out;
 	&:hover {
-		background-color: rgba( 9, 43, 57, 1 );
-		border: 2px solid rgba( 55, 175, 101, 0.8 );
+		background-color: rgba( 9, 43, 57, 7 );
+	}
+	.bug {
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 }
 
 .glassBox {
 	color: #fff;
     padding: 1rem 1.5rem;
-    background: linear-gradient(
-		90deg,
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 0.8)
-	);
-    box-shadow:  -6px 6px 4px 0 rgba(18, 122, 236, 0.5 );
+    background: #212121;
+    box-shadow: -16px 16px 4px 0 rgba(0, 0, 0, 0.6 );
 	border-radius: 10px;
+	min-height: 34vh;
 }
 
 .iconstack{
@@ -83,25 +83,20 @@ span {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	.iconlogo{
 		border-radius: 10px;
 		align-items: space-between;
 	}
 }
 
-.stackhidden {
-	opacity: 0;
-	transition: all 1s;
-}
-
-
 
 .title{
 	color: #fff;
 	align-items: center;
+	font-size: 3rem;
 	text-align: center;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 	justify-content: space-between;
 }
 

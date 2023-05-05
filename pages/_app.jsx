@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 1500)
   }, [])
 
   return (

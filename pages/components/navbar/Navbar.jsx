@@ -9,33 +9,33 @@ import Next from '/public/logo2.jpg'
 
 function Navbar() {
 
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    }
+    const links = [
+        {  href: "/#about", classname: "fa-solid fa-house", text: "sobre mí" },
+        {  href: "/#experience", classname: "fa-solid fa-brain", text: "Experiencia" },
+        {  href: "/#contact", classname: "fa-solid fa-address-book", text: "contacto" },
+    ];
     
     return (
     <div className="navbar">
-        <Link className="logo" rel='noreferrer' offset={-150} duration={500} href="/">
+        <Link className="logo" rel='noreferrer' href="/">
             <Image
                 src={Nextgif}
                 alt="Logo"
                 id='logo'
                 width={70}
                 height={70}
+                
                 href="/#about"
             />
         </Link>
         
+        
         <div className="buttons_mid">
-                <Link className="button" href="/" spy={true} smooth={true} offset={50} duration={500} >
-                    <i className="fa-solid fa-house"></i><a className="bug" smooth >Sobre mí</a>
+            {links.map((l) => (
+                <Link className="button" key={l.href} href={l.href}>
+                    <i className={l.classname}></i><div className="bug">{l.text}</div>
                 </Link>
-                <Link className="button" rel='noreferrer' href="/#experience" spy={true} smooth={true} offset={50} duration={500}>
-                    <i className="fa-solid fa-brain"></i> <a className="bug">Experiencia</a>
-                </Link>
-                <Link className="button" rel='noreferrer' smooth offset={-50} duration={500} href="/#contact">
-                    <i className="fa-solid fa-address-book"></i> <a className="bug">Contacto</a>
-                </Link>
+            ))}
         </div>
 
         <div className="buttons_corner">

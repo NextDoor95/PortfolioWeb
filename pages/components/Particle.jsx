@@ -7,7 +7,7 @@ function Particle() {
         fullScreen: {
             zIndex: -10,
         },
-        fpsLimit: 120,
+        fpsLimit: 170,
         interactivity: {
             events: {
                 onClick: {
@@ -22,10 +22,10 @@ function Particle() {
             },
             modes: {
                 push: {
-                    quantity: 2,
+                    quantity: 4,
                 },
                 repulse: {
-                    distance: 200,
+                    distance: 600,
                     duration: 0.4,
                 },
             },
@@ -36,10 +36,10 @@ function Particle() {
             },
             links: {
                 color: "#127aec",
-                distance: 150,
+                distance: 100,
                 enable: true,
-                opacity: 0.75,
-                width: 1,
+                opacity: 0.5,
+                width: 0.5,
             },
             collisions: {
                 enable: true,
@@ -68,7 +68,7 @@ function Particle() {
                 type: "circle",
             },
             size: {
-                value: { min: 1, max: 3 },
+                value: { min: 1, max: 1 },
             },
         },
         detectRetina: true,

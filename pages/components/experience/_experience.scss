@@ -1,5 +1,5 @@
 .experience {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
 
@@ -8,7 +8,7 @@
         align-items: space-between;
         justify-content: space-between;
         gap: 4rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(600px, auto));
         .individualproject {
             align-items: center;
             grid-template-columns: 1fr;
@@ -19,7 +19,7 @@
                 justify-content: center;
                 .img {
                     border-radius: 10px;
-                    box-shadow:  -16px 16px 4px 0 rgba(0, 0, 0, 0.8 );
+                    box-shadow:  -16px 16px 4px 0 rgba(0, 0, 0, 0.6 );
                 }
             }
         }
