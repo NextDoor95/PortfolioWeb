@@ -12,7 +12,7 @@ import Sass from 'public/sass.jpg'
 import Git from 'public/git.png'
 import Hardhat from 'public/hardhat.png'
 import Solidity from 'public/solidity.png'
-import Deve from 'public/development.png'
+import Deve from 'public/abanderado.jpeg'
 
 function About(props) {
 
@@ -75,14 +75,14 @@ function About(props) {
                 <div className="right">
                     <Image
                         className="iconlogo"
-                        width={550}
+                        width={350}
                         height={350}
                         src={Deve}
                         alt="development"
                     />
                     <div className="curriculum">
                         <a className="button" href="public/frontendcv.pdf" download>
-                            <div className="bug">Descargar CV(no funciona)</div><i className="fa-solid fa-cloud-arrow-down"></i>
+                            <div className="bug">Descargar CV</div><i className="fa-solid fa-cloud-arrow-down"></i>
                         </a>
                     </div>
                 </div>
