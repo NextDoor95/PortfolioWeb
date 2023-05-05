@@ -12,7 +12,7 @@ import Sass from 'public/sass.jpg'
 import Git from 'public/git.png'
 import Hardhat from 'public/hardhat.png'
 import Solidity from 'public/solidity.png'
-import Development from 'public/development.png'
+import Deve from 'public/development.png'
 
 function About(props) {
 
@@ -77,8 +77,8 @@ function About(props) {
                         className="iconlogo"
                         width={550}
                         height={350}
-                        src={Development}
-                        alt="image"
+                        src={Deve}
+                        alt="development"
                     />
                     <div className="curriculum">
                         <a className="button" href="public/frontendcv.pdf" download>
