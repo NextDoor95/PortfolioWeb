@@ -46,7 +46,7 @@ function Experience() {
             src: Speezard,
             alt: "Speezard project",
             title: "Speezard Lorem lorem",
-            text: "es una pre-aceleradora de startups Web3 que pone una comunidad mínima viable al servicio de nuevos emprendimientos",
+            text: "Lorem ipsum no me acuerdo como seguía y no me tira el shortcut para poner un texto largo acá, pero como tome suficiente café puedo hacerlo mas rapido que VSCode, yo 1, VSCode 0.",
             web: 'https://www.speezard.io/',
             webbtn: "fa-solid fa-link",
             code: 'https://github.com/P4-Games/NoF-LandingPage',

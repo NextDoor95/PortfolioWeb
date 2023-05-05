@@ -4,8 +4,8 @@ const nextConfig = {
 }
 
 module.exports = {
-  experimental: {
-    images: true
+  images: {
+    unoptimized: true
   }
 }
 
