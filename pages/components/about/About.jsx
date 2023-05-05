@@ -4,8 +4,6 @@ import Image from 'next/image'
 
 import Spline from '@splinetool/react-spline'
 
-import Logos from '../logos/Logos.jsx'
-
 import Javascript from 'public/JavaScript-logo.png'
 import Typescript from 'public/Typescript.png'
 import Reacticon from 'public/react.png'
