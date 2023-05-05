@@ -7,7 +7,6 @@ import Nof from 'public/nof.png'
 import Speezard from 'public/Speezard.png'
 import Clock from 'public/project7.png'
 
-
 function Experience() {
 
     const projects = [
@@ -87,11 +86,11 @@ function Experience() {
                     <div key={p.id} className="individualproject">
                         <div className="imgproject">
                             <Image 
-                            src={p.src}
-                            alt="JavaScript Logo"
-                            height={200}
-                            width={400}
-                            className="img"
+                                src={p.src}
+                                alt={p.alt}
+                                height={200}
+                                width={400}
+                                className="img"
                             />
                         </div>
                         <div className="glassBox">

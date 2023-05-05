@@ -82,7 +82,9 @@ function About(props) {
                     />
                     <div className="curriculum">
                         <a className="button" href="public/frontendcv.pdf" download>
-                            <div className="bug">Descargar CV</div><i className="fa-solid fa-cloud-arrow-down"></i>
+                            <div className="bug">
+                                Descargar CV
+                            </div><i className="fa-solid fa-cloud-arrow-down"></i>
                         </a>
                     </div>
                 </div>
