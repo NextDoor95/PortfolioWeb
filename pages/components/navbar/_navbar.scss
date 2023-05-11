@@ -15,7 +15,7 @@
 	border-bottom: 0.25px solid rgba( 9, 43, 57, 0.6 );
 
 	.logo {
-		min-width: 200px;
+		min-width: 60px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -52,12 +52,13 @@
 			border-radius: 250px;
 			cursor: pointer;
 			text-decoration: none;
-			border: 2px solid rgba( 245, 245, 245, 0.8 );
 			margin: 20px;
+			box-shadow:
+            inset -6px -6px 16px rgba( 55, 175, 101, 1 ),
+            inset 6px 6px 16px rgba( 9, 43, 57, 0.4 );
 			transition: all 0.1s ease-out;
 			&:hover {
-				background-color: rgba( 55, 175, 101, 0.3 );
-				border: 2px solid rgba( 55, 175, 101, 0.8 );
+				background-color: rgba( 55, 175, 101, 0.6 );
 			}
 			.bug {
 				padding-left: 8px;

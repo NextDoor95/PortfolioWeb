@@ -1,5 +1,71 @@
 .footer {
-    height: 100vh;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+	max-width: 1440px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	text-align: center;
+	margin-top: 6vh;
+    .top {
+        display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px;
+		height: 140px;
+		.left {
+			font-size: 14px;
+			line-height: 2.6rem;
+		}
+        .right {
+            display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+			flex-direction: row;
+			align-items: flex-start;
+			font-size: 14px;
+			line-height: 20px;
+            .col {
+                display: flex;
+				flex-direction: column;
+				.linkbutton {
+					margin-top: 10px;
+					p {
+						display: flex;
+						color: #8e8e8e;
+						&:hover {
+							color: rgba(139, 188, 238);
+						}
+					}
+				}
+				
+            }
+        }
+    }
+	.bottom {
+		border-top: 1px solid gray;
+		padding: 20px 0;
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		font-size: 14px;
+		line-height: 20px;
+		&social {
+			display: flex;
+			justify-content: center;
+			gap: 24px;
+			@media (min-width: 900px) {
+				gap: 40px;
+			}
+
+			img {
+				filter: invert(1);
+				cursor: pointer;
+
+				&:hover {
+					filter: invert(0.8);
+				}
+			}
+		}
+	}
 }

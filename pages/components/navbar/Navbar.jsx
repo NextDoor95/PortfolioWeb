@@ -12,7 +12,7 @@ function Navbar() {
     const links = [
         {  href: "/#about", classname: "fa-solid fa-house", text: "sobre mí" },
         {  href: "/#experience", classname: "fa-solid fa-brain", text: "Experiencia" },
-        {  href: "/#contact", classname: "fa-solid fa-address-book", text: "contacto" },
+        {  href: "/#contact", classname: "fa-solid fa-address-book", text: "Dev tips!" },
     ];
     
     return (
@@ -22,8 +22,8 @@ function Navbar() {
                 src={Nextgif}
                 alt="Logo"
                 id='logo'
-                width={70}
-                height={70}
+                width={60}
+                height={60}
                 
                 href="/#about"
             />
@@ -39,13 +39,18 @@ function Navbar() {
         </div>
 
         <div className="buttons_corner">
-            <Link className="greenbtn" href="#experience" rel='noreferrer'>
+            <Link className="greenbtn" href="https://wa.me/message/FTVME456Q3PMI1" target="_blank" rel='noreferrer'>
                 <i className="fa-brands fa-whatsapp"></i> <div className="bug">Iteremos!</div>
             </Link>
             <div className="configbutton">
                 <i className="fa-sharp fa-solid fa-earth-americas"></i>
             </div>
-            
+            <div className="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" className="checkbox"></input>
+                    <span className="slider"></span>
+                </label>
+            </div>  
         </div>
         
     </div>

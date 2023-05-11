@@ -12,7 +12,7 @@ import Sass from 'public/sass.jpg'
 import Git from 'public/git.png'
 import Hardhat from 'public/hardhat.png'
 import Solidity from 'public/solidity.png'
-import Deve from 'public/abanderado.jpeg'
+import Escarapela from 'public/escarapelaweb3.png'
 
 function About(props) {
 
@@ -33,6 +33,16 @@ function About(props) {
         {href: "https://github.com/NextDoor95", classname: "fa-brands fa-github"},
         {href: "https://twitter.com/NextDoor95", classname: "fa-brands fa-twitter"},
     ];
+
+    const handleDownload = (event) => {
+        event.preventDefault();
+        const link = document.createElement("a");
+        link.href = "../../../public/frontendcv.pdf";
+        link.download = "frontendcv.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     
     return (
         <section className="about" id="about">
@@ -51,9 +61,13 @@ function About(props) {
                     ))}
                 </div>
                 <div className="glassBox">
-                    Hola! Mi nombre es <span>Néstor Huircapan</span>, vivo en <span>Puerto Madryn, Chubut</span>.
-                    Soy <span>desarrollador frontend</span> enfocado al diseño <span>UX/UI</span> y entusiasta<span> web3</span>, 
-                    me considero 100% <span>creativo y autodidacta</span>. <br/><span>mi tech stack</span>:
+                    Hola! Mi nombre es <span>Néstor</span>, soy de <span>Puerto Madryn, Chubut</span>.<br/>
+                    Desarrollador web autodidacta, me dedico a diseñar y llevar a código el <span>frontend </span>
+                    de distintos proyectos, enfocandome en <span>UX/UI</span>, entusiasta del mundo<span> web3 </span>
+                    y siempre buscando aprender más sobre las últimas tecnologías y tendencias.
+                    Uso metodologías ágiles, soy proactivo y siempre dispuesto a colaborar.
+                    <br/>Si necesitas ayuda con tu proyecto, ¡no dudes en contactarme!.
+                    <br/><span>mi tech stack:</span>
                     
                     <div className="iconstack">
                         {logos.map((l) => (
@@ -75,17 +89,20 @@ function About(props) {
                 <div className="right">
                     <Image
                         className="iconlogo"
-                        width={350}
-                        height={350}
-                        src={Deve}
-                        alt="development"
+                        width={300}
+                        height={280}
+                        src={Escarapela}
+                        alt="Escarapela web3 Argentina"
                     />
+                    <p>Llevemos tu idea al siguiente nivel!</p>
                     <div className="curriculum">
-                        <a className="button" href="public/frontendcv.pdf" download>
-                            <div className="bug">
-                                Descargar CV
-                            </div><i className="fa-solid fa-cloud-arrow-down"></i>
-                        </a>
+                        
+                            <Link className="button" href="/pdf/FrontendCV.pdf" target='_blank' download='frontend-cv.pdf'>
+                                <div className="bug">
+                                    Descargar CV
+                                </div>
+                                <i className="fa-solid fa-cloud-arrow-down"></i>
+                            </Link>
                     </div>
                 </div>
             </div>
