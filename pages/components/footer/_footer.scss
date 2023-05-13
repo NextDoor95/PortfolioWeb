@@ -4,17 +4,28 @@
 	flex-direction: column;
 	gap: 32px;
 	text-align: center;
-	margin-top: 6vh;
+	margin-top: 8vh;
     .top {
         display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		padding-top: 8vh;
 		gap: 24px;
-		height: 140px;
 		.left {
-			font-size: 14px;
-			line-height: 2.6rem;
+			color: #8e8e8e;
+			font-size: 12px;
+			line-height: 1.6rem;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.logo {
+				margin: 10px 10px;
+			}
+			p {
+				color: #8e8e8e;
+			}
 		}
         .right {
             display: flex;
@@ -24,7 +35,6 @@
 			flex-direction: row;
 			align-items: flex-start;
 			font-size: 14px;
-			line-height: 20px;
             .col {
                 display: flex;
 				flex-direction: column;
@@ -33,6 +43,7 @@
 					p {
 						display: flex;
 						color: #8e8e8e;
+						transition: all 0.1s ease-out;
 						&:hover {
 							color: rgba(139, 188, 238);
 						}
@@ -43,27 +54,46 @@
         }
     }
 	.bottom {
-		border-top: 1px solid gray;
+		border-top: 1px solid rgba( 9, 43, 57, 0.6 );
 		padding: 20px 0;
 		margin-top: 40px;
 		display: flex;
 		justify-content: space-between;
 		font-size: 14px;
 		line-height: 20px;
-		&social {
+		.rights-reserved {
+			font-size: 12px;
+			p {
+				color: #8e8e8e;
+			}
+		}
+		.social {
 			display: flex;
 			justify-content: center;
 			gap: 24px;
-			@media (min-width: 900px) {
-				gap: 40px;
-			}
-
-			img {
-				filter: invert(1);
-				cursor: pointer;
-
+			font-size: 12px;
+			.button-footer {
+				padding: 0 12px;
+				color: #8e8e8e;
+				font-weight: 400;
+				font-size: 12px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				justify-content: center;
+				transition: all 0.1s ease-out;
+				p {
+					color: #8e8e8e;
+					transition: all 0.1s ease-out;
+					&:hover {
+						color: rgba(139, 188, 238);
+					}
+				}
 				&:hover {
-					filter: invert(0.8);
+					color: rgba(139, 188, 238);
+				}
+				.bug {
+					padding-left: 8px;
 				}
 			}
 		}

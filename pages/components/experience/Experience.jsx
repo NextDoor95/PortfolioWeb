@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Nof from 'public/nof.png'
-import Speezard from 'public/Speezard.png'
+import Speezard from 'public/SpeezardProject.png'
 import Clock from 'public/project7.png'
 
 function Experience() {

@@ -66,7 +66,6 @@ function About(props) {
                     de distintos proyectos, enfocandome en <span>UX/UI</span>, entusiasta del mundo<span> web3 </span>
                     y siempre buscando aprender más sobre las últimas tecnologías y tendencias.
                     Uso metodologías ágiles, soy proactivo y siempre dispuesto a colaborar.
-                    <br/>Si necesitas ayuda con tu proyecto, ¡no dudes en contactarme!.
                     <br/><span>mi tech stack:</span>
                     
                     <div className="iconstack">
