@@ -38,7 +38,7 @@ function Navbar() {
         </div>
 
         <div className="buttons_corner">
-            <Link className="greenbtn" href="https://wa.me/message/FTVME456Q3PMI1" target="_blank" rel='noreferrer'>
+            <Link className="greenbtn" href="https://wa.me/message/5F7KIECVDD3NI1" target="_blank" rel='noreferrer'>
                 <i className="fa-brands fa-whatsapp"></i> <div className="bug">Hablemos!</div>
             </Link>
             <div className="configbutton">

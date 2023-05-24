@@ -83,7 +83,7 @@ function Footer() {
                     </div>
                     <div className="col">
                         <p>Contáctame!</p>
-                            <Link className="linkbutton" href="https://wa.me/message/FTVME456Q3PMI1" target="_blank" rel='noreferrer'>
+                            <Link className="linkbutton" href="https://wa.me/message/5F7KIECVDD3NI1" target="_blank" rel='noreferrer'>
                                 <p className="footer-btn">
                                     WhatsApp
                                 </p>
