@@ -13,6 +13,8 @@ import Git from 'public/git.png'
 import Hardhat from 'public/hardhat.png'
 import Solidity from 'public/solidity.png'
 import Escarapela from 'public/escarapelaweb3.png'
+import Talentsocial from 'public/TalentFavicon.ico'
+import Talentprotocol from 'public/TalentProtocol.png'
 
 function About(props) {
 
@@ -33,16 +35,6 @@ function About(props) {
         {href: "https://github.com/NextDoor95", classname: "fa-brands fa-github"},
         {href: "https://twitter.com/NextDoor95", classname: "fa-brands fa-twitter"},
     ];
-
-    const handleDownload = (event) => {
-        event.preventDefault();
-        const link = document.createElement("a");
-        link.href = "../../../public/frontendcv.pdf";
-        link.download = "frontendcv.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
     
     return (
         <section className="about" id="about">
@@ -55,16 +47,30 @@ function About(props) {
                 </div>
                 <div className="social">
                     {icons.map((i) => (
-                        <Link className="button" key={i.href} href={i.href} target='_blank' rel='noreferrer'>
-                            <i className={i.classname}></i>
-                        </Link>
+                            <Link
+                                className="button"
+                                key={i.href}
+                                href={i.href}
+                                target='_blank'
+                                rel='noreferrer'
+                                >
+                                <i className={i.classname}></i>
+                            </Link>
                     ))}
+                    <Link
+                        href="https://beta.talentprotocol.com/u/nextdoor"
+                        target='_blank'
+                        rel='noreferrer'
+                        className="talent-protocol"
+                                >
+                            T
+                    </Link>
                 </div>
                 <div className="glassBox">
                     Hola! Mi nombre es <span>Néstor</span>, soy de <span>Puerto Madryn, Chubut</span>.<br/>
-                    Desarrollador web autodidacta, me dedico a diseñar y llevar a código el <span>frontend </span>
-                    de distintos proyectos, enfocandome en <span>UX/UI</span>, entusiasta del mundo<span> web3 </span>
-                    y siempre buscando aprender más sobre las últimas tecnologías y tendencias.
+                    Desarrollador web autodidacta, me dedico a diseñar y llevar a código<br/> el <span>frontend </span>
+                    de distintos proyectos, enfocandome en <span>UX/UI</span>,<br/> entusiasta del mundo<span> web3 </span>
+                    y siempre buscando aprender más sobre<br/> las últimas tecnologías y tendencias.
                     Uso metodologías ágiles, soy proactivo y siempre dispuesto a colaborar.
                     <br/><span>mi tech stack:</span>
                     
@@ -95,8 +101,12 @@ function About(props) {
                     />
                     <p>Llevemos tu idea al siguiente nivel!</p>
                     <div className="curriculum">
-                        
-                            <Link className="button" href="/pdf/FrontendCV.pdf" target='_blank' download='frontend-cv.pdf'>
+                            <Link
+                                className="button"
+                                href="/pdf/FrontendCV.pdf"
+                                target='_blank'
+                                download='frontend-cv.pdf'
+                                >
                                 <div className="bug">
                                     Descargar CV
                                 </div>

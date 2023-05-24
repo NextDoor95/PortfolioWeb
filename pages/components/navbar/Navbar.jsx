@@ -12,7 +12,7 @@ function Navbar() {
     const links = [
         {  href: "/#about", classname: "fa-solid fa-house", text: "sobre mí" },
         {  href: "/#experience", classname: "fa-solid fa-brain", text: "Experiencia" },
-        {  href: "/#contact", classname: "fa-solid fa-address-book", text: "Dev tips!" },
+        {  href: "/devtips", classname: "fa-solid fa-address-book", text: "Dev tips!" },
     ];
     
     return (
@@ -24,7 +24,6 @@ function Navbar() {
                 id='logo'
                 width={60}
                 height={60}
-                
                 href="/#about"
             />
         </Link>
@@ -46,13 +45,12 @@ function Navbar() {
                 <i className="fa-sharp fa-solid fa-earth-americas"></i>
             </div>
             <div className="toggle-switch">
-                <label class="switch-label">
+                <label className="switch-label">
                     <input type="checkbox" className="checkbox"></input>
                     <span className="slider"></span>
                 </label>
             </div>  
         </div>
-        
     </div>
     )
 }

@@ -34,31 +34,29 @@
 		align-items: center;
 	}
 	.buttons_corner {
-		min-width: 200px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		.greenbtn {
 			background-color:green;
-			padding: 0 10px;
+			padding: 0 12px;
 			color: #fff;
-			font-family: 'Poppins';
-			font-size: 16px;
 			line-height: 30px;
 			display: flex;
 			align-items: center;
 			text-align: center;
 			justify-content: space-between;
-			border-radius: 250px;
-			cursor: pointer;
+			border-radius: 50px;
 			text-decoration: none;
 			margin: 20px;
+			border-top: 1px solid rgba( 9, 43, 57, 1 );
+			border-bottom: 1px solid rgba( 9, 43, 57, 1 );
 			box-shadow:
-            inset -6px -6px 16px rgba( 55, 175, 101, 1 ),
-            inset 6px 6px 16px rgba( 9, 43, 57, 0.4 );
+            inset 6px 6px 16px rgba( 55, 175, 101, 1 ),
+            inset -6px -6px 16px rgba( 9, 43, 57, 0.4 );
 			transition: all 0.1s ease-out;
 			&:hover {
-				background-color: rgba( 55, 175, 101, 0.6 );
+				background-color: rgba(8, 89, 39, 0.6);
 			}
 			.bug {
 				padding-left: 8px;

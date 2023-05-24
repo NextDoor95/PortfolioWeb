@@ -103,7 +103,7 @@ function Experience() {
                             <div>
                                 {p.text}
                             </div>
-                            <div className="social">
+                            <div className="socialicons">
                                 <Link
                                     className="button"
                                     href={p.web}

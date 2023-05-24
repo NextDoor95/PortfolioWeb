@@ -9,25 +9,12 @@
         justify-content: space-between;
         gap: 4rem;
         grid-template-columns: repeat(auto-fit, minmax(500px, auto));
-        .individualproject {
-            align-items: center;
-            grid-template-columns: 1fr;
-            .imgproject {
-                margin-bottom: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .img {
-                    border-radius: 10px;
-                    box-shadow:  -16px 16px 4px 0 rgba(0, 0, 0, 0.6 );
-                }
-            }
-        }
-        .social {
+        
+        .socialicons {
             display: flex;
 			align-items: center;
             justify-content: center;
-            margin-top: 15px;
+            margin-top: 60px;
             .button {
                 height: 40px;
                 width: 40px;

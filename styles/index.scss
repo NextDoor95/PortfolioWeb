@@ -4,6 +4,7 @@
 @import 'pages/components/about/_about.scss';
 @import 'pages/components/experience/_experience.scss';
 @import 'pages/components/footer/_footer.scss';
+@import '/styles/devtips.scss';
 
 * {
 	padding: 0;
@@ -36,14 +37,23 @@ span {
 	color: rgba(139, 188, 238);
 }
 
-.loader {
-    display: flex;
-    text-align: center;
-    align-items: center;
+.individualproject {
+	align-items: center;
+	grid-template-columns: 1fr;
+	.imgproject {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.img {
+			border-radius: 10px;
+			box-shadow:  -16px 16px 4px 0 rgba(0, 0, 0, 0.6 );
+		}
+	}
 }
 
 .button {
-	background-color:black;
+	background-color:#212121;
 	padding: 0 12px;
 	color: #e8e8e8;
 	font-family: 'Poppins';
@@ -57,12 +67,14 @@ span {
 	border-radius: 50px;
 	cursor: pointer;
 	text-decoration: none;
+	border-top: 1px solid rgba( 9, 43, 57, 0.6 );
+	border-bottom: 1px solid rgba( 9, 43, 57, 0.6 );
 	box-shadow:
-            inset 6px 6px 16px rgba( 0, 0, 0, 1 ),
-            inset -6px -6px 16px rgba( 9, 43, 57, 0.4 );
+            inset -6px -6px 16px rgba( 0, 0, 0, 1 ),
+            inset 6px 6px 16px rgba( 9, 43, 57, 0.4 );
 	transition: all 0.2s ease-out;
 	&:hover {
-		background-color: rgba( 9, 43, 57, 7 );
+		background-color: rgb(16, 63, 83);
 	}
 	.bug {
 		padding-left: 8px;
@@ -97,7 +109,7 @@ span {
 .title{
 	color: #fff;
 	align-items: center;
-	font-size: 3rem;
+	font-size: 2rem;
 	text-align: center;
 	margin-bottom: 2rem;
 	justify-content: space-between;
