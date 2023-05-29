@@ -41,7 +41,7 @@ function About(props) {
             <div className="profile">
                 <div>
                     <Spline
-                        scene="https://prod.spline.design/FkCnR-woTDV7Dcn4/scene.splinecode"
+                        scene="https://draft.spline.design/n2cho1B-rb-ecbcd/scene.splinecode"
                         className="spline"
                     />
                 </div>
